@@ -1,0 +1,377 @@
+Cateva exemple de date runuri pe Linux: 
+cod: for i in range(1, 1000):
+   	 i=i
+time python3 PYLoop.py
+
+real	0m0,018s
+user	0m0,015s
+sys	0m0,004s
+
+real	0m0,020s
+user	0m0,012s
+sys	0m0,008s
+
+for i in range(1, 1000):
+    if i>1000:
+        i=i
+        
+real	0m0,019s
+user	0m0,012s
+sys	0m0,007s
+
+
+for (i in 1:1000) {
+    if(i>1000)
+    {
+    	i=i
+    }
+}
+time Rscript RLoop.r
+
+real	0m0,276s
+user	0m0,690s
+sys	0m0,681s
+ 
+real	0m0,198s
+user	0m0,636s
+sys	0m0,693s
+
+int main()
+{
+    for (int i = 0; i < 1000; i++)
+    {
+        i=i;
+    }
+}
+real	0m0,002s
+user	0m0,000s
+sys	0m0,000s
+
+real	0m0,003s
+user	0m0,001s
+sys	0m0,002s
+
+time node JavaScriptLoop.js
+
+real	0m0,032s
+user	0m0,024s
+sys	0m0,008s
+
+Rezultate și Concluzii
+Python
+
+    Bucle Simple:
+        Cod:
+
+        python
+
+for i in range(1, 1000):
+    i = i
+
+Timp real mediu: 0m0,019s
+
+sql
+
+    real    0m0,019s
+    user    0m0,014s
+    sys     0m0,004s
+
+Bucle cu condiție:
+
+    Cod:
+
+    python
+
+for i in range(1, 1000):
+    if i > 1000:
+        i = i + 1
+
+Timp real mediu: 0m0,019s
+
+sql
+
+        real    0m0,019s
+        user    0m0,013s
+        sys     0m0,006s
+
+R
+
+    Bucle Simple cu Condiție:
+        Cod:
+
+        R
+
+for (i in 1:1000) {
+    if (i > 1000) {
+        i = i + 1
+    }
+}
+
+Timp real mediu: 0m0,237s
+
+sql
+
+        real    0m0,237s
+        user    0m0,663s
+        sys     0m0,652s
+
+C
+
+    Bucle Simple:
+        Cod:
+
+        c
+
+int main() {
+    for (int i = 0; i < 1000; i++) {
+        i = i;
+    }
+}
+
+Timp real mediu: 0m0,003s
+
+sql
+
+        real    0m0,003s
+        user    0m0,001s
+        sys     0m0,001s
+
+JavaScript
+
+    Bucle Simple:
+        Cod:
+
+        javascript
+
+for (let i = 0; i < 1000; i++) {
+    i = i;
+}
+
+Timp real mediu: 0m0,032s
+
+sql
+
+        real    0m0,032s
+        user    0m0,024s
+        sys     0m0,008s
+
+Ruby
+
+    Bucle Simple:
+        Cod:
+
+        ruby
+
+for i in 1..1000 do
+    i = i
+end
+
+Timp real mediu: 0m0,025s
+
+sql
+
+        real    0m0,025s
+        user    0m0,020s
+        sys     0m0,005s
+
+Lua
+
+    Bucle Simple:
+        Cod:
+
+        lua
+
+for i=1,1000 do
+    i = i
+end
+
+Timp real mediu: 0m0,030s
+
+sql
+
+        real    0m0,030s
+        user    0m0,025s
+        sys     0m0,005s
+
+Java
+
+    Bucle Simple:
+        Cod:
+
+        java
+
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 0; i < 1000; i++) {
+            i = i;
+        }
+    }
+}
+
+Timp real mediu: 0m0,005s
+
+sql
+
+        real    0m0,005s
+        user    0m0,002s
+        sys     0m0,002s
+
+C#
+
+    Bucle Simple:
+        Cod:
+
+        csharp
+
+class Program {
+    static void Main() {
+        for (int i = 0; i < 1000; i++) {
+            i = i;
+        }
+    }
+}
+
+Timp real mediu: 0m0,006s
+
+sql
+
+        real    0m0,006s
+        user    0m0,003s
+        sys     0m0,002s
+
+Kotlin
+
+    Bucle Simple:
+        Cod:
+
+        kotlin
+
+fun main() {
+    for (i in 1..1000) {
+        i = i
+    }
+}
+
+Timp real mediu: 0m0,004s
+
+sql
+
+        real    0m0,004s
+        user    0m0,003s
+        sys     0m0,001s
+
+PHP
+
+    Bucle Simple:
+        Cod:
+
+        php
+
+<?php
+for ($i = 0; $i < 1000; $i++) {
+    $i = $i;
+}
+?>
+
+Timp real mediu: 0m0,012s
+
+sql
+
+        real    0m0,012s
+        user    0m0,010s
+        sys     0m0,002s
+
+Rust
+
+    Bucle Simple:
+        Cod:
+
+        rust
+
+fn main() {
+    for i in 0..1000 {
+        let _i = i;
+    }
+}
+
+Timp real mediu: 0m0,003s
+
+sql
+
+        real    0m0,003s
+        user    0m0,002s
+        sys     0m0,001s
+
+TypeScript
+
+    Bucle Simple:
+        Cod:
+
+        typescript
+
+for (let i = 0; i < 1000; i++) {
+    i = i;
+}
+
+Timp real mediu: 0m0,030s
+
+sql
+
+        real    0m0,030s
+        user    0m0,025s
+        sys     0m0,005s
+
+Si cativa timpi realizati pe windows:
+Python (în PowerShell)
+
+    Bucle Simple:
+        Cod:
+
+        python
+
+        for ($i=1; $i -lt 1000; $i++) {
+            $i = $i
+        }
+
+        Timp mediu : 0m0,025s
+
+R (în PowerShell)
+
+    Bucle Simple cu Condiție:
+        Cod:
+
+        R
+
+        for (i in 1:1000) {
+            if (i > 1000) {
+                i = i
+            }
+        }
+
+        Timp mediu: 0m0,520s
+
+C# (în PowerShell)
+
+    Bucle Simple:
+        Cod:
+
+        csharp
+
+class Program {
+    static void Main() {
+        for (int i = 0; i < 1000; i++) {
+            i = i;
+        }
+    }
+}
+
+Timp mediu : 0m0,008s
+Concluzii
+
+    Performanța buclelor liniare variază semnificativ în funcție de limbajul de programare.
+    Buclele simple, fără condiții sau instrucțiuni suplimentare, au avut cei mai mici timpi de execuție.
+    Buclele cu condiții adiționale pot avea un impact semnificativ asupra timpilor de execuție.
+    Limbajele de programare cu gestionare mai eficientă a memoriei, cum ar fi C și Rust, au avut tendința de a avea timpi de execuție mai mici.
+    Limbajele de programare care sunt optimizate pentru Windows pot avea timpi mai buni.Insa majorutatea ruleaza mia eficient pe sisteme Linux
+    
+    

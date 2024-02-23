@@ -1,0 +1,71 @@
+Analiza Varianței Performanței Buclelor Liniare în Diverse Configurații Software și Limbaje de Programare
+
+
+Abstract:
+Articolul propune o investigație asupra variației performanței buclelor liniare în diferite configurații software și limbaje de programare. Problema abordată vizează identificarea factorilor cheie care influențează performanța acestor bucle, contribuțiile principale constând într-o analiză a variației performanței și propunerea de soluții pentru optimizarea acestora. Rezultatele furnizează o înțelegere mai profundă a impactului configurațiilor software și a limbajelor de programare asupra performanței buclelor liniare.
+
+Clasificare:
+    • ACM: D.2.8 Metrics, B.2.4 High-Speed Arithmetic
+    • AMS: 68W01 General topics in the theory of algorithms
+
+Introducere:
+Problema performanței variabile a buclelor liniare în diverse configurații software și limbaje de programare este esențială în domeniul calculului de înaltă performanță. Background-ul acestei probleme este susținut de relevanța sa în cadrul calculului științific și al aplicațiilor intensive numeric. Articolul propune să acopere o lacună specifică din abordările curente, oferind o analiză detaliată a cazurilor simple și de bază pentru a compara performanța buclelor liniare. În continuare, se vor explora aspecte specifice ale configurațiilor software și limbajelor de programare cu impact semnificativ asupra performanței.
+
+Descriere Abordare Proprie Originală:
+Pentru a soluționa problema performanței variabile, propunem o abordare bazată pe analiza arhitecturilor hardware implicate și pe caracteristicile specifice ale limbajelor de programare. Prezentăm un model matematic/formal pentru evaluarea performanței buclelor liniare și introducem algoritmi simpli pentru testarea și verificarea discrepanțelor acestora. Aspectele originale ale abordării includ verificarea a patru seturi de bucle simple cu diverse condiții și forme, având aceeași dimensiune pentru a elimina cât mai mult din variabilitate. Aceste 39 de programe vor fi scrise în 13 limbaje de programare, inclusiv C, C++, Rust, Java, R, Ruby, TypeScript, JavaScript, Lua, PHP, C#, Kotlin și Python. Toate aceste programe vor fi testate pe multiple sisteme de operare, inclusiv calculatoare personale cu sisteme de operare Windows și Linux, precum și pe infrastructura cloud. Nu includem date pentru dispozitive mobile pentru a evita incertitudinea ridicată asupra rezultatelor.
+
+Validare Experimentală:
+Pentru a valida abordarea, vom realiza experimente pe terminalul Linux folosind comanda time pentru a ilustra eficiența programelor pe exemple ușor de urmărit și neutre din punct de vedere al interferenței cu alte programe. De asemenea, vom efectua experimente pe diverse alte mașini, folosind metoda nativă Measure-Command în PowerShell pentru Windows, pentru a calcula timpul de execuție al codului.
+
+Rezultate și Concluzii:
+Interpretarea și validarea rezultatelor vor fi prezentate în detaliu, comparându-le cu abordările existente. Vom analiza în ce măsură rezultatele răspund la întrebările de cercetare, trăgând concluzii relevante și oferind argumente pentru validitatea acestora. Acestea vor fi incluse într-un document separat.
+
+Concluzii:
+    1. Variația Semnificativă a Performanței:
+        ◦ Performanța buclelor liniare este substanțial influențată de alegerea limbajului de programare și de specificitățile sale în implementare.
+    2. Eficiența Buclelor Simple:
+        ◦ Buclele simple, caracterizate prin absența condițiilor sau instrucțiunilor suplimentare, manifestă cei mai redusi timpi de execuție.
+    3. Impactul Condițiilor Adiționale:
+        ◦ Introducerea condițiilor suplimentare în buclele de program poate genera variații semnificative în timpul de execuție.Insa variatia acestora ar fi sugerat sa fie mai semnificativa decat variatia prezenta in acest studiu, comparativ timpul de executie fiind asemenator.
+    4. Gestionarea Eficientă a Memoriei:
+        ◦ Limbajele de programare cu un sistem eficient de gestionare a memoriei, exemplificate de C și Rust, prezintă tendința de a înregistra timpi de execuție mai mici.
+    5. Optimizări Specifice pentru Windows:
+        ◦ Există indicii că limbajele de programare optimizate pentru mediul Windows pot beneficia de timpi de execuție mai favorabili, deși majoritatea limbajelor evidențiază performanțe superioare pe sistemele de operare Linux.
+Aceste concluzii sunt susținute de datele experimentale obținute în cadrul studiului și reflectă influența factorilor diversi în performanța buclelor liniare în contextul analizat. Este important să subliniem că optimizările specifice pentru un anumit mediu pot influența semnificativ rezultatele, iar această observație este majoritar consistenta cu cercetările anterioare în domeniul optimizării performanței algoritmice.
+
+
+Bibliografie:
+Lista bibliografică cuprinde referințe complete la cărți, articole și jurnale relevante cuprind:
+
+*Types and Programming Languages
+Benjamin C. Pierce
+Cartea lui Pierce a fost necesara pentru a intelege si a avea o mai buna intelegere asupra unei game variate de limbaje de programare,ajutandu-ma in a imi constrange numarul de si tipurile de limbaje care le-am folosit
+
+Comparative Study of C, C++, C# and Java Programming Languages
+Chen, Hao (2010)
+Studiu comparativ a lui Chen si Hao au fost folosite pentru a accelera procesul de comparare al al diverselor limbaje ,fiind folosind ca un ghid despre cum ar trebui sa abordez compararea limbajelor pe functii liniare
+
+Ranking functions for linear-constraint loops. J. ACM 61(4), 1–55
+Ben-Amram, A., Genaim, S. (2014)
+Una dintre cele mai apropiate lucrari comparativ cu tema abordata,a ajutat in depistarea unor lacune de abordare in prezenta folosirii de mai multe functii pentru analiza
+
+To type or not to type?: a systematic comparison of the software quality of JavaScript and typescript applications on GitHub
+Justus Bogner Manuel Merkel
+A imbunatatit intelegerea limbajului JavaScript,dar si al supersetului sau,Typescript
+
+A Comparison of Python, JavaScript and Lua Scripting Language Features
+A Nusrat, A Pokluda, M Wexler - 2014 
+S-a dovedit a fi o necesitate in intelegerea acestort limbaje script,ca sa pot aborda mai eficient rularea loopuri-lor liniare
+
+The Linux Command Line, 2nd Edition: A Complete Introduction
+De William Shotts
+Prima dintre cele doua carti,care au facut rularea programelor sa nu depinda cat de mult posibil de variable create de mediile de dezvoltare informatice,pentru sisteme bazate pe UNIX
+
+Learning PowerShell
+De Jonathan Hassell
+
+A doua dintre cele doua carti,care au facut rularea programelor sa nu depinda cat de mult posibil de variable create de mediile de dezvoltare informatice,pentru sisteme de tip Windows 
+
+Repository Git:
+Proiectul va fi gestionat printr-un repository Git, unde vom include atât codul sursă, cât și documentul. Se va furniza o parte de istoric care să ateste munca constantă.
+
